@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="forgotlogin.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="../login/login.css">
+    <link rel="stylesheet" href="../header.css">
     <title>Cafeteria - Forgot Password</title>
 </head>
 <body>
     <div className='flexSB'>
         <ul> 
             <li id="logo"><a to='/'><b>EatEzy</b></a></li>
-            <li><a to='/'>HOME</a></li>
-            <li><a to='/about'>ABOUT</a></li>
-            <li><a to='/signup'>SIGNUP</a></li>
-            <li><a to='/login'>LOGIN</a></li>
+            <li><a to='/' class="hover-underline-animation">HOME</a></li>
+            <li><a to='/about' class="hover-underline-animation">ABOUT</a></li>
+            <li><a to='/signup' class="hover-underline-animation">SIGNUP</a></li>
+            <li><a to='/login' class="hover-underline-animation">LOGIN</a></li>
         </ul>
     </div>
 
-    <div class="login-container">
+    <div class="login-flex-container">
         <form action="" class="login-form">
             <h2>Login</h2>
-            <p>Fill credentials to update password</p>
+            <p>Fill the below credentials<br></br>to retrieve profile</p>
             <input type='email' placeholder='Email ID' name='email' requried/>
             <br></br>
-            <input type='text' placeholder='Enter new password' name='password' requried/>
+            <input type='text' placeholder='Re-enter password' name='password' requried/>
             <br></br>
             <button type='submit' class="login-submit-btn">LOGIN</button>
         </form>
