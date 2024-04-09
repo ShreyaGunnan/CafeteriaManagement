@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="../header.css">
+</head>
+<body>
+    <section class='flexSB'>
+        <ul> 
+            <li id="logo"><a to='/'><b>EatEzy</b></a></li>
+            <li><a to='/' class="hover-underline-animation">HOME</a></li>
+            <li><a to='/' class="hover-underline-animation">ORDER</a></li>
+            <li><a to='/' class="hover-underline-animation">CART</a></li>
+            <li><a to='/' class="hover-underline-animation">LOGOUT</a></li>
+        </ul>
+    </section>
+    <div class="page-container">
+        <div class="cart-container">
+            <div class="header-cart">
+                <h2>Your Cart</h2>
+                <h2>3 Items</h2>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item-img"></div>
+                <div class="cart-item-txt">
+                    <h3>Item name</h3>
+                    <p>Type</p>
+                </div>
+                <p id="cart-item-cost">Rs. XXX</p>
+                <div class="cart-onclick">
+                    <div class="cart-sym-left"><p class="cart-sym-dec"><b>-</b></p></div>
+                    <div class="menu-cart-count"><p class="cart-count">1</p></div>
+                    <div class="cart-sym-right"><p class="cart-sym-inc"><b>+</b></p></div>
+                </div>
+                <p id="cart-item-sum-cost">Rs. XXX</p>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item-img"></div>
+                <div class="cart-item-txt">
+                    <h3>Item name</h3>
+                    <p>Type</p>
+                </div>
+                <p id="cart-item-cost">Rs. XXX</p>
+                <div class="cart-onclick">
+                    <div class="cart-sym-left"><p class="cart-sym-dec"><b>-</b></p></div>
+                    <div class="menu-cart-count"><p class="cart-count">1</p></div>
+                    <div class="cart-sym-right"><p class="cart-sym-inc"><b>+</b></p></div>
+                </div>
+                <p id="cart-item-sum-cost">Rs. XXX</p>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item-img"></div>
+                <div class="cart-item-txt">
+                    <h3>Item name</h3>
+                    <p>Type</p>
+                </div>
+                <p id="cart-item-cost">Rs. XXX</p>
+                <div class="cart-onclick">
+                    <div class="cart-sym-left"><p class="cart-sym-dec"><b>-</b></p></div>
+                    <div class="menu-cart-count"><p class="cart-count">1</p></div>
+                    <div class="cart-sym-right"><p class="cart-sym-inc"><b>+</b></p></div>
+                </div>
+                <p id="cart-item-sum-cost">Rs. XXX</p>
+            </div>
+            <div class="footer-cart">
+                <h2>Subtotal:</h2>
+                <h2>Rs. YYY</h2>
+            </div>
+        </div>
+        <div class="payment-container">
+            <h2>Payment</h2>
+            <form class="payment-form">
+                <div>
+                    <input type="radio" id="pay1" name="pay" value="cash">
+                    <label for="pay1" class="radio"><span class="radio-check"></span>Cash</label><br>
+                </div>
+                <div>
+                    <input type="radio" id="pay2" name="pay" value="upi">
+                    <label for="pay2"  class="radio">UPI</label>
+                </div>
+                <input type="text" placeholder='Transaction ID' name='tranID' requried/>
+            </form>
+            <img class="qr-img" src="../random-qr.png">
+            <img class="payment-icon" src="../payment-app.jpeg">    
+        </div>
+    </div>
+</body>
+</html>
