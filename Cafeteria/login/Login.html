@@ -1,95 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../header.css">
+    <title>Cafeteria - Login</title>
+</head>
+<body>
+    <div className='flexSB'>
+        <ul> 
+            <li id="logo"><a to='/'><b>EatEzy</b></a></li>
+            <li><a to='/' class="hover-underline-animation">HOME</a></li>
+            <li><a to='/about' class="hover-underline-animation">ABOUT</a></li>
+            <li><a to='/signup' class="hover-underline-animation">SIGNUP</a></li>
+            <li><a to='/login' class="hover-underline-animation">LOGIN</a></li>
+        </ul>
+    </div>
 
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: #f8f8f8;
-}
-
-p{
-    font-size: 17px;
-    font-weight: 250;
-    padding-top: 0px;
-    margin-top: 0px;
-}
-
-h2{
-    margin-top: 15px;
-    font-size: 25px;
-}
-
-#forgot-pass{
-    text-decoration-line: underline;
-    color: rgb(170,208,23);
-    cursor: pointer;
-}
-
-.login-flex-container{
-    z-index: -1;
-    margin-top: 80px;
-    margin-left: 34%;
-    width: 400px;
-    height: 420px;
-    justify-content: center;
-    background-color: white;
-    border-radius: 20px;
-}
-
-.login-form{
-    padding-top: 25px;
-    text-align: center;
-}
-
-input[type=text]{
-    border: none;
-    border-bottom: 1px solid black;
-    outline: none;
-    box-shadow: none;
-    background: transparent;
-    width: 70%;
-    padding: 3px;
-    font-size: 17px;
-    font-weight: 300;
-    color: black;
-}
-
-input[type=email]{
-    border: none;
-    border-bottom: 1px solid black;
-    outline: none;
-    box-shadow: none;
-    background: transparent;
-    width: 70%;
-    margin-top: 30px;
-    padding: 3px;
-    font-size: 17px;
-    font-weight: 300;
-    color: black;
-}
-
-.login-form-left{
-    display: flex;
-    flex-direction: column;
-}
-
-.login-form-right{
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-}
-
-.login-submit-btn{
-    background-color: rgb(170,208,23);
-    color: black;
-    font-size: 18px;
-    font-weight: 300;
-    border-radius: 20px;
-    width: 200px;
-    height: 40px;
-    margin-top: 45px;
-    border: none;
-}
-
-.login-submit-btn:hover{
-    background-color: rgb(0,0,0,0.1);
-    transition: 0.5s;
-}
+    <div class="login-flex-container">
+        <form action="" class="login-form">
+            <h2>Login</h2>
+            <p>Welcome back!<br></br>Did you <a id="forgot-pass">forget your password?</a></p>
+            <input type='email' placeholder='Email ID' name='email' requried/>
+            <br></br>
+            <input type='text' placeholder='Enter password' name='password' requried/>
+            <br></br>
+            <button type='submit' class="login-submit-btn">LOGIN</button>
+        </form>
+    </div>
+</body>
+</html>
